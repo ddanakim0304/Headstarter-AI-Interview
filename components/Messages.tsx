@@ -10,12 +10,12 @@ function Messages({ messages }: Props) {
   return (
     <div className="flex flex-col flex-1 p-3 pt-5 overflow-y-auto h-full"> {/* Ensure full height and scrollability */}
 
-    <LoadingMessage />
+      <LoadingMessage />
       {!messages.length && (
         <div className="flex flex-col space-y-5 flex-1 items-center justify-end">
           <p className="text-purple-200 animate-pulse text-sm">Start the Interview</p>
           <ChevronDownCircle
-            size={28} 
+            size={28}
             className="animate-bounce text-purple-200"
           />
         </div>
